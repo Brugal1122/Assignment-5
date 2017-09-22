@@ -2,11 +2,11 @@ angular.module('listings').factory('Listings', ['$http',
   function($http) {
     var methods = {
       getAll: function() {
-        return $http.get('http://localhost:8080/api/listings');
+        return $http.get('https://git.heroku.com/nameless-peak-90953.git/api/listings');
       },
 
       create: function(listing) {
-        return $http.post('http://localhost:8080/api/listings', listing);
+        return $http.post('https://git.heroku.com/nameless-peak-90953.git/api/listingss', listing);
       },
 
       read: function(id) {
